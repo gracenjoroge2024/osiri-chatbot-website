@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Osiri Virtual Assistant</title>
+
+  <!-- Dialogflow Messenger Stylesheet -->
+  <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+</head>
+<body>
+  <h1>Welcome to Osiri University Virtual Assistant</h1>
+  <p>Chat with our virtual assistant to learn more about Osiri University, including programs, admissions, and more.</p>
+
+  <!-- Dialogflow Messenger Script -->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+
+  <!-- Dialogflow Messenger Chat Bubble -->
+  <df-messenger
+    project-id="ai-for-everyone-434806"
+    agent-id="46dcc3a8-6a0e-4574-bcb1-d550fff35f68"
+    language-code="en"
+    max-query-length="-1">
+    <df-messenger-chat-bubble
+      chat-title="Osiri Virtual Assistant">
+    </df-messenger-chat-bubble>
+  </df-messenger>
+
+  <!-- Custom CSS for Messenger -->
+  <style>
+    df-messenger {
+      z-index: 999;
+      position: fixed;
+      --df-messenger-font-color: #000;
+      --df-messenger-font-family: "Google Sans", sans-serif;
+      --df-messenger-chat-background: #f3f6fc;
+      --df-messenger-message-user-background: #d3e3fd;
+      --df-messenger-message-bot-background: #fff;
+      bottom: 16px;
+      right: 16px;
+    }
+  </style>
+</body>
+</html>
